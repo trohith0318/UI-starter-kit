@@ -1,0 +1,24 @@
+<!-- HTML -->
+<div class="loader-flip"></div>
+
+<!-- CSS -->
+<style>
+.loader-flip {
+  width: 40px;
+  height: 40px;
+  background: #03a9f4;
+  animation: flip 1s infinite ease-in-out;
+  margin: 40px auto;
+}
+@keyframes flip {
+  0% {
+    transform: perspective(100px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(100px) rotateX(180deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(100px) rotateX(180deg) rotateY(180deg);
+  }
+}
+</style>
